@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4"
+    android:orientation="vertical"
+    tools:context=".Activity.EditCustomerInfoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:titleTextColor="@android:color/white" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- contact layout -->
+            <LinearLayout
+                android:id="@+id/layPersonalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/reg_personal_bg" />
+
+
+                <!-- First, Last name EditText Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:background="@drawable/bg_input_layout_form"
+                        style="@style/TextLabel"
+                        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextFirstName"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:hint="First name"
+                            android:inputType="textCapSentences"
+                            android:maxLength="2000"
+                            android:maxLines="1"
+                            android:textColorHint="@android:color/white"
+                            android:textColor="@android:color/white"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:background="@drawable/bg_input_layout_form"
+                        style="@style/TextLabel"
+                        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:hint="Last name"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:inputType="textCapSentences"
+                            android:maxLength="2000"
+                            android:maxLines="1"
+                            android:textColorHint="@android:color/white"
+                            android:textColor="@android:color/white"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <!-- Email EditText Layout -->
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:background="@drawable/bg_input_layout_form"
+                        style="@style/TextLabel"
+                        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:hint="Email"
+                            android:enabled="false"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="2000"
+                            android:maxLines="1"
+                            android:textColorHint="@android:color/white"
+                            android:textColor="@android:color/white"
+                            android:scrollHorizontally="false" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <!-- Phone EditText Layout -->
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:background="@drawable/bg_input_layout_form"
+                        style="@style/TextLabel"
+                        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:hint="Phone"
+                            android:inputType="phone"
+                            android:maxLength="2000"
+                            android:maxLines="1"
+                            android:textColorHint="@android:color/white"
+                            android:textColor="@android:color/white"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!-- password layout -->
+            <LinearLayout
+                android:id="@+id/layPersonalPassInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/reg_personal_pass_bg" />
+
+                <!-- Password EditText Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:background="@drawable/bg_input_layout_form"
+                        style="@style/TextLabel"
+                        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:hint="Password"
+                            android:inputType="text"
+                            android:maxLength="2000"
+                            android:maxLines="1"
+                            android:scrollHorizontally="false"
+                            android:textColorHint="@android:color/white"
+                            android:textColor="@android:color/white"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <!-- Confirm Password EditText Layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:background="@drawable/bg_input_layout_form"
+                        style="@style/TextLabel"
+                        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/editTextConPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:hint="Confirm password"
+                            android:inputType="text"
+                            android:maxLength="2000"
+                            android:textCursorDrawable="@null"
+                            android:background="@null"
+                            android:maxLines="1"
+                            android:scrollHorizontally="false"
+                            android:textColorHint="@android:color/white"
+                            android:textColor="@android:color/white"/>
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Sign Up layout -->
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="20sp"
+                android:text="Confirm Update Information"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Medix</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_search">Search</string>
+    <string name="search_hint">Type name…</string>
+
+    <string name="lbl_create_account">Don\'t have an account? Sign Up here.</string>
+    <string name="currency_sign">৳</string>
+    <string name="prescription_text">Have trouble to understand prescription? Don\'t Worry, here you can upload the prescription and we will make things easier.</string>
+    <string name="prescription_text_activity">Enter your name with contact number and note.</string>
+    <string name="cod_details">You can pay in cash to our courier when you receive the goods at your doorstep at ৳40.00</string>
+
+
+</resources>

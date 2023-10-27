@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "149052079604",
+    "firebase_url": "https://medix-b9c65.firebaseio.com",
+    "project_id": "medix-b9c65",
+    "storage_bucket": "medix-b9c65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149052079604:android:c698931434a862790a0da1",
+        "android_client_info": {
+          "package_name": "com.example.medix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149052079604-uoo95ored0c283qvnlj46jaf2tk88te5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.medix",
+            "certificate_hash": "6007d9baf5e1db6c66fd7c4c6cde962793c4afa2"
+          }
+        },
+        {
+          "client_id": "149052079604-8olq6dv6qc11fusodadn8chit536m200.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYQV62umBQHtTjd9dOlcRcXxvwdBlqknQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149052079604-8olq6dv6qc11fusodadn8chit536m200.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
